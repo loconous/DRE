@@ -98,7 +98,7 @@ class Header extends React.Component {
             className="nav-link-icon"
             to={"/vulnerability"}
             tag={Link}>
-            <i className="fa fa-database" />
+            <i className="fa fa-flag" />
             <span className="nav-link-inner--text">Vulnerability Search</span>
           </NavLink>
         </NavItem>
@@ -151,7 +151,7 @@ class Header extends React.Component {
             className="nav-link-icon"
             to={"/vulnerability"}
             tag={Link}>
-            <i className="fa fa-database" />
+            <i className="fa fa-flag" />
             <span className="nav-link-inner--text">Vulnerability Search</span>
           </NavLink>
         </NavItem>
