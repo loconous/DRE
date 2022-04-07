@@ -16,7 +16,7 @@ export default class Process_Container extends Component {
        {
             return (
                 
-                <label>{this.props.name}</label>
+                <label><a href="/vulnerabilityresult" style={{color: "black"}}>{this.props.name}</a></label>
             
             )
        }
