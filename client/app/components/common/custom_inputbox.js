@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
@@ -18,4 +18,4 @@ const CustomInputBox = (props) => {
 }
 
 
-export default CustomInputBox
+export default CustomInputBox;
