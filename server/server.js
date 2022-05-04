@@ -27,6 +27,17 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+/**
+ * Global error handler function
+ * It logs out the error and returns specified status
+ * Error message needs to be parsed to eliminate data that may provide information to attackers
+ * This function allows us to handle all errors in the code if they go through api
+ */
+app.use(function(err, req, res, next){
+  console.log(err);
+  res.status(500).send({ message: 'Ops! Something went wrong.' })
+});
+
 // API routes
 require('./routes')(app);
 
